@@ -1,85 +1,110 @@
 import React from "react";
 //Import Icons
-import clock from "../img/clock.svg";
-import diaphragm from "../img/diaphragm.svg";
-import money from "../img/money.svg";
-import teamwork from "../img/teamwork.svg";
-import home2 from "../img/home2.png";
+import creativity from "../img/creativity.svg";
+import solution from "../img/solution.svg";
+import determine from "../img/determine.svg";
+import curiosity from "../img/curiosity.svg";
 //Styles
-import { About, Description, Image } from "../styles";
+import { 
+  About, DescriptionLeft, DescriptionRight, 
+
+} from "../styles";
 import styled from "styled-components";
-import { scrollReveal } from "../animation";
+import { scrollReveal} from "../animation";
 import { useScroll } from "./useScroll";
 
 const ServicesSection = () => {
   const [element, controls] = useScroll();
+
   return (
     <Services
       variants={scrollReveal}
       animate={controls}
       initial="hidden"
       ref={element}
+      className="services"
     >
-      <Description>
-        <h2>
-          High <span>quality</span> services
-        </h2>
+      <DescriptionLeft className="no_mar">
         <Cards>
           <Card>
             <div className="icon">
-              <img alt="icon" src={clock} />
-              <h3>Efficient</h3>
+              <img alt="icon" src={creativity} />
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Creativity</p>
           </Card>
           <Card>
             <div className="icon">
-              <img alt="icon" src={teamwork} />
-              <h3>Teamwork</h3>
+              <img alt="icon" src={solution} />
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Problem-solving mindset</p>
           </Card>
           <Card>
             <div className="icon">
-              <img alt="icon" src={diaphragm} />
-              <h3>Diaphragm</h3>
+              <img alt="icon" src={determine} />
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Determination & Resilience</p>
           </Card>
           <Card>
             <div className="icon">
-              <img alt="icon" src={money} />
-              <h3>Affordable</h3>
+              <img alt="icon" src={curiosity} />
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Intellectual Curiosity</p>
           </Card>
         </Cards>
-      </Description>
-      <Image>
-        <img alt="camera" src={home2} />
-      </Image>
+      </DescriptionLeft>
+      <DescriptionRight className="services_text">
+        <h2>My core <span>strengths</span></h2>
+        <p className="service_p f-p">I combine ecology and ITlor sit amet consectetur adipisicing elit. Quam quis obcaecati numquam voluptates sit in.</p>
+        <p className="service_p">to make this tter place Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, ea.</p>
+        <p className="service_p">to make this tter place Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, ea.</p>
+        <p className="service_p last_par">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores deleniti cum facilis quam alias. Nemo.</p> 
+        <a className="button" href="./about">Read More</a>
+      </DescriptionRight>
     </Services>
   );
 };
 
 const Services = styled(About)`
+  .no_mar{
+    flex:1;
+    margin-right: 0;
+  }
   h2 {
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
+    font-weight: bold;
   }
   p {
-    width: 70%;
-    padding: 2rem 0rem 4rem 0rem;
+    width: 100%;
+    padding: 1rem 0rem;
+  }
+  .f-p{
+    padding: 0 0 1rem 0;
+  }
+  .icon img{
+    width: 75px;
+    height: 75px;
   }
 `;
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
-  @media (max-width: 1300px) {
-    justify-content: center;
-  }
+  margin-left: -15px;
 `;
 const Card = styled.div`
-  flex-basis: 20rem;
+  flex-basis: 17rem;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction:column;
+  text-align: center;
+  background: #121212;
+  margin: 15px;
+  padding: 2.5rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 15px -3px rgba(0, 5, 3, 0.3);
+  -moz-box-shadow: 5px 5px 15px -3px rgba(0, 5, 3, 0.3);
+  box-shadow: 5px 5px 15px -3px rgba(0, 5, 3, 0.3);
+
   .icon {
     display: flex;
     align-items: center;
@@ -89,6 +114,10 @@ const Card = styled.div`
       color: black;
       padding: 1rem;
     }
+  }
+  p{
+    padding: 0rem;
+    padding-top: 1rem;
   }
 `;
 

@@ -2,7 +2,8 @@ import React from "react";
 //Global Style
 import GlobalStyle from "./components/GlobalStyle";
 //Import Pages
-import AboutUs from "./pages/AboutUs";
+import Home from "./pages/Home";
+import AboutMe from "./pages/AboutMe";
 import ContactUs from "./pages/ContactUs";
 import OurWork from "./pages/OurWork";
 import Nav from "./components/Nav";
@@ -23,7 +24,10 @@ function App() {
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
           <Route path="/" exact>
-            <AboutUs />
+            <Home />
+          </Route>
+          <Route path="/about" exact>
+            <AboutMe />
           </Route>
           <Route path="/work" exact>
             <OurWork />
@@ -31,7 +35,7 @@ function App() {
           <Route path="/work/:id">
             <MovieDetail />
           </Route>
-          <Route path="/contact">
+          <Route path="/contact" exact>
             <ContactUs />
           </Route>
         </Switch>
