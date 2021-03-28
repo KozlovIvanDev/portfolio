@@ -4,7 +4,7 @@ import { About, DescriptionLeft, Image, Hide, TextContainer } from "../styles";
 //Framer Motion
 import { motion } from "framer-motion";
 import styled from "styled-components";
-import { titleAnim, fade, photoAnim } from "../animation";
+import { fade, photoAnim } from "../animation";
 import Wave from "./Wave";
 
 const AboutSection = () => {
