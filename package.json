@@ -2,6 +2,7 @@
   "homepage": "https://github.com/KozlovIvanDev/portfolio",
   "name": "ivankozlov",
   "version": "0.1.0",
+  "main": "./index.html",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
