@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.28c81acd.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.28c81acd.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.75af0aa7.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.75af0aa7.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.f42395f4.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.f42395f4.js.map",
-    "static/js/2.24942ebd.chunk.js": "/portfolio/static/js/2.24942ebd.chunk.js",
-    "static/js/2.24942ebd.chunk.js.map": "/portfolio/static/js/2.24942ebd.chunk.js.map",
+    "static/js/2.5a030bc6.chunk.js": "/portfolio/static/js/2.5a030bc6.chunk.js",
+    "static/js/2.5a030bc6.chunk.js.map": "/portfolio/static/js/2.5a030bc6.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.c6e705e09da61ed09696a52170aa419b.js": "/portfolio/precache-manifest.c6e705e09da61ed09696a52170aa419b.js",
+    "precache-manifest.59778392a7a6a327dd80f1b4b340e207.js": "/portfolio/precache-manifest.59778392a7a6a327dd80f1b4b340e207.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/js/2.24942ebd.chunk.js.LICENSE.txt": "/portfolio/static/js/2.24942ebd.chunk.js.LICENSE.txt",
+    "static/js/2.5a030bc6.chunk.js.LICENSE.txt": "/portfolio/static/js/2.5a030bc6.chunk.js.LICENSE.txt",
     "static/media/DigitalCleanup.png": "/portfolio/static/media/DigitalCleanup.1b17edba.png",
     "static/media/Logo.svg": "/portfolio/static/media/Logo.589e20d5.svg",
     "static/media/bugster.png": "/portfolio/static/media/bugster.0976dad2.png",
@@ -17,14 +17,17 @@
     "static/media/curiosity.svg": "/portfolio/static/media/curiosity.81e28ed6.svg",
     "static/media/determine.svg": "/portfolio/static/media/determine.51944f63.svg",
     "static/media/facebook.svg": "/portfolio/static/media/facebook.b5fcf817.svg",
+    "static/media/facebook_outlined.svg": "/portfolio/static/media/facebook_outlined.767dddbd.svg",
     "static/media/instagram.svg": "/portfolio/static/media/instagram.fc23b902.svg",
+    "static/media/instagram_outlined.svg": "/portfolio/static/media/instagram_outlined.fc94c14a.svg",
     "static/media/intro.jpg": "/portfolio/static/media/intro.e0448a8a.jpg",
     "static/media/solution.svg": "/portfolio/static/media/solution.5dda803d.svg",
-    "static/media/telegram.svg": "/portfolio/static/media/telegram.a888fec0.svg"
+    "static/media/telegram.svg": "/portfolio/static/media/telegram.a888fec0.svg",
+    "static/media/telegram_outlined.svg": "/portfolio/static/media/telegram_outlined.0987fd82.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.f42395f4.js",
-    "static/js/2.24942ebd.chunk.js",
-    "static/js/main.28c81acd.chunk.js"
+    "static/js/2.5a030bc6.chunk.js",
+    "static/js/main.75af0aa7.chunk.js"
   ]
 }
