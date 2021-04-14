@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.js": "/KozlovIvanDev/myPortfolio/static/js/main.cd4f0ecd.chunk.js",
+    "main.js.map": "/KozlovIvanDev/myPortfolio/static/js/main.cd4f0ecd.chunk.js.map",
+    "runtime-main.js": "/KozlovIvanDev/myPortfolio/static/js/runtime-main.d621df2e.js",
+    "runtime-main.js.map": "/KozlovIvanDev/myPortfolio/static/js/runtime-main.d621df2e.js.map",
+    "static/js/2.07f7127b.chunk.js": "/KozlovIvanDev/myPortfolio/static/js/2.07f7127b.chunk.js",
+    "static/js/2.07f7127b.chunk.js.map": "/KozlovIvanDev/myPortfolio/static/js/2.07f7127b.chunk.js.map",
+    "index.html": "/KozlovIvanDev/myPortfolio/index.html",
+    "precache-manifest.f6ff57e0a6e8cb8a57667d96b6e39ae0.js": "/KozlovIvanDev/myPortfolio/precache-manifest.f6ff57e0a6e8cb8a57667d96b6e39ae0.js",
+    "service-worker.js": "/KozlovIvanDev/myPortfolio/service-worker.js",
+    "static/js/2.07f7127b.chunk.js.LICENSE.txt": "/KozlovIvanDev/myPortfolio/static/js/2.07f7127b.chunk.js.LICENSE.txt",
+    "static/media/DigitalCleanup.png": "/KozlovIvanDev/myPortfolio/static/media/DigitalCleanup.1b17edba.png",
+    "static/media/Logo.svg": "/KozlovIvanDev/myPortfolio/static/media/Logo.589e20d5.svg",
+    "static/media/athlete-small.png": "/KozlovIvanDev/myPortfolio/static/media/athlete-small.f85903d4.png",
+    "static/media/athlete2.png": "/KozlovIvanDev/myPortfolio/static/media/athlete2.6d53898d.png",
+    "static/media/bugster.png": "/KozlovIvanDev/myPortfolio/static/media/bugster.0976dad2.png",
+    "static/media/creativity.svg": "/KozlovIvanDev/myPortfolio/static/media/creativity.4cb58d2a.svg",
+    "static/media/curiosity.svg": "/KozlovIvanDev/myPortfolio/static/media/curiosity.81e28ed6.svg",
+    "static/media/determine.svg": "/KozlovIvanDev/myPortfolio/static/media/determine.51944f63.svg",
+    "static/media/facebook.svg": "/KozlovIvanDev/myPortfolio/static/media/facebook.b5fcf817.svg",
+    "static/media/good-times2.jpg": "/KozlovIvanDev/myPortfolio/static/media/good-times2.e149f59c.jpg",
+    "static/media/goodtimes-small.png": "/KozlovIvanDev/myPortfolio/static/media/goodtimes-small.169a9b3a.png",
+    "static/media/instagram.svg": "/KozlovIvanDev/myPortfolio/static/media/instagram.fc23b902.svg",
+    "static/media/intro.jpg": "/KozlovIvanDev/myPortfolio/static/media/intro.e0448a8a.jpg",
+    "static/media/solution.svg": "/KozlovIvanDev/myPortfolio/static/media/solution.5dda803d.svg",
+    "static/media/telegram.svg": "/KozlovIvanDev/myPortfolio/static/media/telegram.a888fec0.svg",
+    "static/media/the-racer2.jpg": "/KozlovIvanDev/myPortfolio/static/media/the-racer2.74873026.jpg",
+    "static/media/theracer-small.png": "/KozlovIvanDev/myPortfolio/static/media/theracer-small.ca518f44.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d621df2e.js",
+    "static/js/2.07f7127b.chunk.js",
+    "static/js/main.cd4f0ecd.chunk.js"
+  ]
+}
