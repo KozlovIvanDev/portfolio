@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "11e4250addc053fa722497b65afb4444",
+    "revision": "2748e6624042222ad82b9314780dd6cf",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "5fc574651d26f1ac92df",
-    "url": "/portfolio/static/js/2.49b22398.chunk.js"
+    "revision": "72f75126f95fed723233",
+    "url": "/portfolio/static/js/2.42ac7eed.chunk.js"
   },
   {
     "revision": "aa4100970f46d7e0ec2af84de3f2740b",
-    "url": "/portfolio/static/js/2.49b22398.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.42ac7eed.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "caeb84e2869aa30a90a2",
-    "url": "/portfolio/static/js/main.697312db.chunk.js"
+    "revision": "fe7cdfbd653484fd5570",
+    "url": "/portfolio/static/js/main.e83b2562.chunk.js"
   },
   {
     "revision": "3889264da765002b4a9e",
@@ -74,5 +74,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0987fd82244d21a8f9f8d13e84bedbd2",
     "url": "/portfolio/static/media/telegram_outlined.0987fd82.svg"
+  },
+  {
+    "revision": "243cb4565a6387bf2b36ae28c56a632a",
+    "url": "/portfolio/static/media/trashhack.243cb456.png"
   }
 ]);

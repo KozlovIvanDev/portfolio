@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.697312db.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.697312db.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.e83b2562.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.e83b2562.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.f42395f4.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.f42395f4.js.map",
-    "static/js/2.49b22398.chunk.js": "/portfolio/static/js/2.49b22398.chunk.js",
-    "static/js/2.49b22398.chunk.js.map": "/portfolio/static/js/2.49b22398.chunk.js.map",
+    "static/js/2.42ac7eed.chunk.js": "/portfolio/static/js/2.42ac7eed.chunk.js",
+    "static/js/2.42ac7eed.chunk.js.map": "/portfolio/static/js/2.42ac7eed.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.ee6ad7c2fea24c53495fb3757d625559.js": "/portfolio/precache-manifest.ee6ad7c2fea24c53495fb3757d625559.js",
+    "precache-manifest.46a538f69af7d0ef54815e965f29d13e.js": "/portfolio/precache-manifest.46a538f69af7d0ef54815e965f29d13e.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/js/2.49b22398.chunk.js.LICENSE.txt": "/portfolio/static/js/2.49b22398.chunk.js.LICENSE.txt",
+    "static/js/2.42ac7eed.chunk.js.LICENSE.txt": "/portfolio/static/js/2.42ac7eed.chunk.js.LICENSE.txt",
     "static/media/DigitalCleanup.png": "/portfolio/static/media/DigitalCleanup.1b17edba.png",
     "static/media/Logo.svg": "/portfolio/static/media/Logo.589e20d5.svg",
     "static/media/bugster.png": "/portfolio/static/media/bugster.0976dad2.png",
@@ -23,11 +23,12 @@
     "static/media/intro.jpg": "/portfolio/static/media/intro.e0448a8a.jpg",
     "static/media/solution.svg": "/portfolio/static/media/solution.5dda803d.svg",
     "static/media/telegram.svg": "/portfolio/static/media/telegram.a888fec0.svg",
-    "static/media/telegram_outlined.svg": "/portfolio/static/media/telegram_outlined.0987fd82.svg"
+    "static/media/telegram_outlined.svg": "/portfolio/static/media/telegram_outlined.0987fd82.svg",
+    "static/media/trashhack.png": "/portfolio/static/media/trashhack.243cb456.png"
   },
   "entrypoints": [
     "static/js/runtime-main.f42395f4.js",
-    "static/js/2.49b22398.chunk.js",
-    "static/js/main.697312db.chunk.js"
+    "static/js/2.42ac7eed.chunk.js",
+    "static/js/main.e83b2562.chunk.js"
   ]
 }
