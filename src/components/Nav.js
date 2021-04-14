@@ -1,18 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react"
 import styled from "styled-components";
+import Logo from "../img/Logo.svg";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 
 const Nav = () => {
   const { pathname } = useLocation();
+  const [scroll, setScroll] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 10)
+    })
+  }, [])
   return (
-    <StyledNav>
-      <h1>
-        <Link id="logo" to="/">
-          Kozlov Ivan
-        </Link>
-      </h1>
+    <StyledNav className={scroll ? "main-header scrolled" : "main-header"}>
+      <Link id="logo" to="/">
+        <img alt="icon" src={Logo} />
+      </Link>
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -57,11 +62,12 @@ const StyledNav = styled.nav`
   margin: auto;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 10rem;
-  background: #282828;
+  padding: 3rem 10rem;
+  background: #1B1B1B;
   position: sticky;
   top: 0;
   z-index: 10;
+  transition: all .4s ease-in-out;
   a {
     color: white;
     text-decoration: none;
@@ -70,10 +76,13 @@ const StyledNav = styled.nav`
     display: flex;
     list-style: none;
   }
-  #logo {
-    font-size: 1.5rem;
-    font-family: "Lobster", cursive;
-    font-weight: lighter;
+  #logo{
+    height: 9.5vh;
+  }
+  #logo img{
+    width: 9.5vh;
+    height: 9.5vh;
+    margin: auto 0;
   }
   li {
     padding-left: 10rem;

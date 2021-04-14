@@ -2,15 +2,48 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const About = styled(motion.div)`
-  min-height: 90vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 5rem 10rem;
   color: white;
 `;
+export const Buttons = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .contact-button{
+    margin: 4rem 2rem;
+    margin-bottom: 0.5rem;
+    padding: 1rem 2rem;
+    border:2px solid #00FFA3;
+    background: transparent;
+    color: #fafafa;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition:all .3s ease-in-out;
+    &:hover{
+      color: #282828;
+      background: #00FFA3;
+    }
+  }
+  .active-btn{
+    background: #00FFA3;
+    color: #282828;
+
+    &:hover{
+      color: #fafafa;
+      border:2px solid #00FFA3;
+      background: transparent;
+    }
+  }
+`;
 export const DescriptionLeft = styled.div`
-  flex: 1.25;
+  flex: 1;
   margin-right: 5rem;
   z-index: 2;
   h2 {
@@ -65,12 +98,15 @@ export const Image = styled.div`
 export const Hide = styled.div`
   overflow: hidden;
 `;
-export const Works = styled.div`
-
-`;
-export const WorkLeft = styled.div`
-
-`;
-export const WorkRight = styled.div`
-
+export const Cursor = styled.div`
+  position:absolute;
+  z-index: 100000;
+  width:15px;
+  height:15px;
+  background-color: #23d997;
+  top: 0;
+  left:0;
+  border-radius: 100%;
+  user-select:none;
+  pointer-events: none;
 `;

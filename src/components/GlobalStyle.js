@@ -5,7 +5,8 @@ const GlobalStyle = createGlobalStyle`
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
+    // cursor: none;
 }
 
 html{
@@ -23,7 +24,6 @@ body{
 .button{
     font-weight: bold;
     font-size: 1.1.rem;
-    cursor: pointer;
     text-decoration: none;
     padding: 1rem 2rem;
     border: 3px solid #23d997;
@@ -64,6 +64,46 @@ body{
     }
     .last_par{
         margin-bottom: 2.5rem;
+      }
+      .cursor {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #fefefe;
+        border-radius: 100%;
+        background-color: transparent;
+        mix-blend-mode: difference;
+        z-index: 999;
+        pointer-events: none;
+      }
+      .clicked{
+        transform: translate(-50%, -50%) scale(0.9);
+        background-color: #fefefe;
+      }
+      .cursor--hidden {
+        opacity: 0;
+    }
+    
+    .cursor--link-hovered {
+        transform: translate(-50%, -50%) scale(1.25);
+        background-color: #fefefe;
+    }
+    
+    .cursor--clicked {
+        transform: translate(-50%, -50%) scale(0.9);
+        background-color: #fefefe;
+    }
+    .question {
+        margin-bottom: 1.5rem;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    .scrolled{
+        transition: all .3s ease-in-out;
+        background: #000000;
       }
 `;
 

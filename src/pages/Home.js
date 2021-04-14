@@ -2,14 +2,16 @@ import React from "react";
 //Page Components
 import AboutSection from "../components/AboutSection";
 import ServicesSection from "../components/ServicesSection";
-import FaqSection from "../components/FaqSection";
 import WorksSection from "../components/WorksSection"
+import CopyrightSection from "../components/CopyrightSection"
+import ContactSection from "../components/ContactSection"
 //Animations
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 import ScrollTop from "../components/ScrollTop";
 
-const Home = () => {
+export default class Home extends React.Component {
+  render() {
   return (
     <motion.div
       exit="exit"
@@ -18,12 +20,12 @@ const Home = () => {
       animate="show"
     >
       <AboutSection />
-      <ServicesSection />
       <WorksSection />
-      <FaqSection />
+      <ServicesSection />
+      <ContactSection />
+      <CopyrightSection />
       <ScrollTop />
     </motion.div>
   );
+  };
 };
-
-export default Home;

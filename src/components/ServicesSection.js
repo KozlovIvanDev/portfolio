@@ -7,11 +7,12 @@ import curiosity from "../img/curiosity.svg";
 //Styles
 import { 
   About, DescriptionLeft, DescriptionRight, 
-
 } from "../styles";
+import Toggle from "./Toggle";
 import styled from "styled-components";
 import { scrollReveal} from "../animation";
 import { useScroll } from "./useScroll";
+import { AnimateSharedLayout } from "framer-motion";
 
 const ServicesSection = () => {
   const [element, controls] = useScroll();
@@ -30,7 +31,7 @@ const ServicesSection = () => {
             <div className="icon">
               <img alt="icon" src={creativity} />
             </div>
-            <p>Creativity</p>
+            <p>Creativitive Thinking</p>
           </Card>
           <Card>
             <div className="icon">
@@ -53,18 +54,48 @@ const ServicesSection = () => {
         </Cards>
       </DescriptionLeft>
       <DescriptionRight className="services_text">
-        <h2>My core <span>strengths</span></h2>
-        <p className="service_p f-p">I combine ecology and ITlor sit amet consectetur adipisicing elit. Quam quis obcaecati numquam voluptates sit in.</p>
-        <p className="service_p">to make this tter place Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, ea.</p>
-        <p className="service_p">to make this tter place Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, ea.</p>
-        <p className="service_p last_par">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores deleniti cum facilis quam alias. Nemo.</p> 
-        <a className="button" href="./about">Read More</a>
+        <h2><span>Core Strengths</span></h2>
+        <AnimateSharedLayout className="marginrem">
+          <Toggle title="Creative Thinking" className="title" >
+            <div className="answer">
+              <p className="service_p">
+                I love programming because it is about the beauty of creating something new from a blank screen. 
+                It is the field where technology meets web design. Every time I bring a design to life and turn it into a functioning website, I can hardly contain happiness with my heart leaping up for joy!
+              </p>
+            </div>
+          </Toggle>
+          <Toggle title="Intellectual Curiosity" className="title" >
+            <div className="answer">
+              <p className="service_p">
+                I often spend my free time diving deep into Ecology and Computer Science just because I love it. 
+                Also, I learned to seek knowledge and reach out to the right people in the pursuit of understanding more about my favorite subjects. 
+              </p>
+            </div>
+          </Toggle>
+          <Toggle title="Problem-solving mindset" className="title" >
+            <div className="answer">
+              <p className="service_p">
+              I used to look for challenges and take risks. After I've got a problem to solve, I follow my little algorithm: analyze the situation, reframe it,
+              break the problem into its parts, and execute and reflect on the issue. This approach helps me both in life and in the process of programming
+              </p>
+            </div>
+          </Toggle>
+          <Toggle title="Determination & Resilience" className="title" >
+            <div className="answer">
+              <p className="service_p">
+                I understood that karate training isn't just about learning to fight and training my entire body, mind, and spirit. Through martial arts, I gained the psychological fortitude needed to develop robust resilience.
+                <br/> Mastering the road to black belt is no small feat, nor is the path an easy journey. Perseverance keeps me focused on the goal, lets me master techniques, and strengthens my mental fortitude for what is to come.
+              </p>
+            </div>
+          </Toggle>   
+        </AnimateSharedLayout>
       </DescriptionRight>
     </Services>
   );
 };
 
 const Services = styled(About)`
+  transition: height .5s ease;
   .no_mar{
     flex:1;
     margin-right: 0;
@@ -84,6 +115,19 @@ const Services = styled(About)`
     width: 75px;
     height: 75px;
   }
+  .faq-line {
+    background: #cccccc;
+    height: 0.2rem;
+    margin: 1rem 0rem;
+    width: 100%;
+  }
+  .question {
+    padding: .5rem 0rem;
+    cursor: pointer;
+  }
+  .marginrem{
+    margin: 3rem;
+  }
 `;
 const Cards = styled.div`
   display: flex;
@@ -91,13 +135,14 @@ const Cards = styled.div`
   margin-left: -15px;
 `;
 const Card = styled.div`
+transition: height .5s ease;
   flex-basis: 17rem;
   display: flex;
   align-items:center;
   justify-content: center;
   flex-direction:column;
   text-align: center;
-  background: #121212;
+  background: #2c2c2c;
   margin: 15px;
   padding: 2.5rem;
   border-radius: 5px;
